@@ -1,27 +1,23 @@
 
-import styled from "styled-components"
-import Contacto from "./components/Contacto"
-import Inicio from "./components/Inicio"
-import Quien from "./components/Quien"
-import Trabajos from "./components/Trabajos"
+import styled from 'styled-components'
+import Contacto from './components/Contacto'
+import Quien from './components/Quien'
+import Trabajos from './components/Trabajos'
+import Inicio from './components/Inicio'
 
 const Container = styled.div`
-  height: 100vh;
-  background-color: rebeccapurple;
+  height: 100vh; 
   scroll-snap-type: y mandatory; 
   scroll-behavior : smooth;
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: url("./public/img/bg.jpeg");
-
-
+  background: url("./img/bg.jpeg");
   &::-webkit-scrollbar {
     display: none;
   }
 `
-function App() {
-
+function App()  {
   return (
     <Container>
       <Inicio/>
