@@ -1,17 +1,34 @@
-import Contacto from "./Components/Contacto"
-import Inicio from "./Components/Inicio"
-import Quien from "./Components/Quien"
-import Trabajos from "./Components/Trabajos"
 
+import styled from "styled-components"
+import Contacto from "./components/Contacto"
+import Inicio from "./components/Inicio"
+import Quien from "./components/Quien"
+import Trabajos from "./components/Trabajos"
+
+const Container = styled.div`
+  height: 100vh;
+  background-color: rebeccapurple;
+  scroll-snap-type: y mandatory; 
+  scroll-behavior : smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+  background: url("./public/img/bg.jpeg");
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
 function App() {
 
   return (
-    <div>
-      <Inicio />
-      <Quien />
-      <Trabajos />
-      <Contacto />
-    </div>
+    <Container>
+      <Inicio/>
+      <Quien/>
+      <Trabajos/>
+      <Contacto/>
+    </Container>
   )
 }
 

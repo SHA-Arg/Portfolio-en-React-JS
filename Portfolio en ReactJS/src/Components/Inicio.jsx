@@ -1,13 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import styled from 'styled-components'
+
+const Section = styled.div`
+    height: 100vh;
+    background-color: rebeccapurple; 
+    scroll-snap-align: center;
+`
 
 const Inicio = () => {
     return (
-        <div>
-        <h1>Inicio</h1>
-        <Link to="/about">About</Link>
-        </div>
-    );
-    };
+        <Section><NavBar/></Section>
+    )
+    }
 
-export default Inicio;
+export default Inicio

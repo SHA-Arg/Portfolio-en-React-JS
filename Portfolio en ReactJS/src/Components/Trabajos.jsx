@@ -1,13 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import styled from 'styled-components'
+
+const Section = styled.div`
+    height: 100vh;
+    background-color: #371c52;
+    scroll-snap-align: center; 
+`
 
 const Trabajos = () => {
     return (
-        <div>
-        <h1>Trabajos</h1>
-        <Link to="/">Inicio</Link>
-        </div>
-    );
-    };
+        <Section>Trabajos</Section>
+    )
+    }
 
-export default Trabajos;
+export default Trabajos

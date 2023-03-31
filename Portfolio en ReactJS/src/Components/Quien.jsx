@@ -1,13 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import styled from 'styled-components'
 
+const Section = styled.div`
+    height: 100vh;    
+    scroll-snap-align: center;
+`
 const Quien = () => {
     return (
-        <div>
-        <h1>Quien</h1>
-        <Link to="/">Inicio</Link>
-        </div>
-    );
-    };
+        <Section>Quien</Section>
+    )
+    }
 
-export default Quien;
+export default Quien
