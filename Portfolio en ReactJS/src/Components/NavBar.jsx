@@ -11,7 +11,7 @@ width: 1000px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px 0;
+padding: 20px 0;
 `
 const Links = styled.div` 
 display: flex;
@@ -28,6 +28,7 @@ gap: 20px;
 list-style: none;
 `
 const ListItem = styled.li`
+cursor: pointer;
 `
 const Iconos = styled.div`
 display: flex;
@@ -44,11 +45,9 @@ padding: 10px;
 background-color: #da4ea2;
 color: white;
 border: none;
-border-radius: 10px;
+border-radius: 5px;
 cursor: pointer;
 `    
-    
-
 
 const NavBar = () => {
     return (
